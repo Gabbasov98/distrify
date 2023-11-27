@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Регистрация</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <div class="auth">
+            <a href="" class="auth__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <form class="auth-form">
+                <div class="auth-form__title text24 text20-tablet bold-text">
+                    Регистрация
+                </div>
+                <div class="type-radios">
+                    <div class="type-radio">
+                        <input checked type="radio" name="type">
+                        <div class="type-radio__inner">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2499 10.3332C13.2499 9.78089 12.8022 9.33317 12.2499 9.33317H10.6712H8.64788C9.13789 5.57148 12.3547 2.6665 16.2499 2.6665C20.1452 2.6665 23.362 5.57148 23.852 9.33317H21.8286L18.2499 9.33317C17.6976 9.33317 17.2499 9.78089 17.2499 10.3332C17.2499 10.8855 17.6976 11.3332 18.2499 11.3332L21.9166 11.3332H23.9166V13.3332H21.9166H18.2499C17.6976 13.3332 17.2499 13.7809 17.2499 14.3332C17.2499 14.8855 17.6976 15.3332 18.2499 15.3332H21.8286H23.852C23.362 19.0949 20.1452 21.9998 16.2499 21.9998C12.3547 21.9998 9.13789 19.0949 8.64788 15.3332H10.6712H12.2499C12.8022 15.3332 13.2499 14.8855 13.2499 14.3332C13.2499 13.7809 12.8022 13.3332 12.2499 13.3332H10.5833H8.58325V11.3332H10.5833H12.2499C12.8022 11.3332 13.2499 10.8855 13.2499 10.3332Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.58325 11.9998C6.13554 11.9998 6.58325 12.4476 6.58325 12.9998V14.3332C6.58325 19.6719 10.9112 23.9998 16.2499 23.9998C21.5887 23.9998 25.9166 19.6719 25.9166 14.3332V12.9998C25.9166 12.4476 26.3643 11.9998 26.9166 11.9998C27.4689 11.9998 27.9166 12.4476 27.9166 12.9998V14.3332C27.9166 20.4396 23.2251 25.4503 17.2499 25.9576V28.9998C17.2499 29.5521 16.8022 29.9998 16.2499 29.9998C15.6976 29.9998 15.2499 29.5521 15.2499 28.9998V25.9576C9.27472 25.4503 4.58325 20.4396 4.58325 14.3332V12.9998C4.58325 12.4476 5.03097 11.9998 5.58325 11.9998Z" fill="white" />
+                            </svg>
+                            <div class="type-radio__title">
+                                Я артист
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type-radio">
+                        <input type="radio" name="type">
+                        <div class="type-radio__inner">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.4167 16.9998C16.3372 16.9998 17.0834 17.746 17.0834 18.6665C17.0834 19.587 16.3372 20.3332 15.4167 20.3332C14.4963 20.3332 13.7501 19.587 13.7501 18.6665C13.7501 17.746 14.4963 16.9998 15.4167 16.9998Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.30822 10.6665C9.30822 6.89527 9.30822 5.00965 10.3981 3.83808C11.4879 2.6665 13.242 2.6665 16.7501 2.6665C20.2582 2.6665 22.0123 2.6665 23.1021 3.83808C24.1919 5.00965 24.1919 6.89527 24.1919 10.6665V21.3332C24.1919 25.1044 24.1919 26.99 23.1021 28.1616C22.0123 29.3332 20.2582 29.3332 16.7501 29.3332C13.242 29.3332 11.4879 29.3332 10.3981 28.1616C9.30822 26.99 9.30822 25.1044 9.30822 21.3332V10.6665ZM19.0834 10.6665C19.0834 10.1142 18.6357 9.6665 18.0834 9.6665C17.5311 9.6665 17.0834 10.1142 17.0834 10.6665V15.3996C16.5834 15.144 16.0169 14.9998 15.4167 14.9998C13.3917 14.9998 11.7501 16.6415 11.7501 18.6665C11.7501 20.6915 13.3917 22.3332 15.4167 22.3332C17.4418 22.3332 19.0834 20.6915 19.0834 18.6665V13.9334C19.5835 14.189 20.1499 14.3332 20.7501 14.3332C21.3024 14.3332 21.7501 13.8855 21.7501 13.3332C21.7501 12.7809 21.3024 12.3332 20.7501 12.3332C19.8296 12.3332 19.0834 11.587 19.0834 10.6665Z" fill="white" />
+                                <path d="M7.44775 10.5348V21.4648C7.44768 22.7752 7.44762 23.9515 7.50936 24.9701C7.53116 25.3296 7.56066 25.6696 7.60058 25.9888C7.61851 26.1321 7.6389 26.2748 7.66223 26.4166C7.70966 26.7048 7.48684 26.9767 7.19589 26.9511C6.6213 26.9006 6.10236 26.793 5.61772 26.5275C4.85923 26.1121 4.24257 25.4492 3.8561 24.6338C3.60917 24.1128 3.50903 23.5549 3.46208 22.9373C3.41673 22.3405 3.41674 21.6062 3.41675 20.7084V11.2913C3.41674 10.3934 3.41673 9.65917 3.46208 9.06241C3.50903 8.44473 3.60917 7.88687 3.8561 7.36588C4.24257 6.55051 4.85923 5.88759 5.61772 5.47214C6.10236 5.20669 6.6213 5.09904 7.19589 5.04857C7.48684 5.02302 7.70966 5.29484 7.66223 5.58303C7.6389 5.72485 7.61851 5.86756 7.60058 6.01092C7.56066 6.33012 7.53116 6.67003 7.50936 7.02961C7.44762 8.04813 7.44768 9.22449 7.44775 10.5348Z" fill="white" />
+                                <path d="M26.0524 10.5349V21.4648C26.0525 22.7752 26.0525 23.9515 25.9908 24.9701C25.969 25.3296 25.9395 25.6696 25.8996 25.9888C25.8817 26.1321 25.8613 26.2748 25.8379 26.4166C25.7905 26.7048 26.0133 26.9767 26.3043 26.9511C26.8789 26.9006 27.3978 26.793 27.8824 26.5275C28.6409 26.1121 29.2576 25.4492 29.6441 24.6338C29.891 24.1128 29.9911 23.5549 30.0381 22.9373C30.0834 22.3405 30.0834 21.6063 30.0834 20.7085V11.2913C30.0834 10.3935 30.0834 9.65914 30.0381 9.06241C29.9911 8.44473 29.891 7.88687 29.6441 7.36588C29.2576 6.55051 28.6409 5.88759 27.8824 5.47214C27.3978 5.20669 26.8789 5.09904 26.3043 5.04857C26.0133 5.02302 25.7905 5.29484 25.8379 5.58303C25.8613 5.72485 25.8817 5.86756 25.8996 6.01092C25.9395 6.33012 25.969 6.67003 25.9908 7.02961C26.0525 8.04814 26.0525 9.22449 26.0524 10.5349Z" fill="white" />
+                            </svg>
+                            <div class="type-radio__title">
+                                Я лейбл
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Название лейбла или псевдоним артиста">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Почта">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Телефон">
+                    <div class="fg__hint-text">
+                        <div class="text12">Номер телефона используется для договора</div>
+                    </div>
+                </fieldset>
+                <button class="auth-form__btn m-btn m-btn-big m-btn-blue">
+                    <span>Зарегистрироваться</span>
+                </button>
+                <div class="auth-form__hint white60-text">
+                    <div class="text12">
+                        Нажимая “Зарегистрироваться” я соглашаюсь <br> с политикой конфиденциальности
+                    </div>
+                </div>
+                <div class="auth-form__bottom">
+                    <div class="text14">Уже есть аккаунт?</div>
+                    <a href="" class="auth-form__link">
+                        <span class="text14">Войти</span>
+                    </a>
+                </div>
+            </form>
+
+            <div class="auth__c">
+                <div class="text12">© 2023 Distrify. Все права защищены.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="balanceModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Пополнить баланс
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <input type="text" placeholder="Сумма пополнения">
+                </fieldset>
+                <fieldset class="fg m-select">
+                    <select>
+                        <option selected>Оплата банковской картой</option>
+                        <option>Оплата банковской картой 2</option>
+                    </select>
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-big m-btn-blue">
+                        <span>Пополнить счет</span>
+                    </button>
+                </div>
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="artistModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Добавить нового артиста
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <input type="text" value="Морган">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ссылка на Spotify">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ссылка на Apple Music">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-big m-btn-blue">
+                        <span>Добавить</span>
+                    </button>
+                </div>
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal track-modal" id="trackModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Загрузить трек
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <div class="file-input _music-input">
+                    <div class="file-input__area">
+                        <input type="file" accept="audio/*">
+                        <div class="file-input__area-inner">
+                            <img src="img/clip.svg" alt="" class="file-input__icon">
+                            <div class="file-input__title text16 bold-text">Загрузить трек</div>
+                            <div class="file-input__desc text12 white60-text">Файл в форматах: mp3</div>
+                            <div class="file-input__name"></div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Название трека">
+                </fieldset>
+                <div class="track-version">
+                    <div class="text16">Версия трека</div>
+                    <div class="radio-buttons">
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion" checked>
+                            <label><span>original</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion">
+                            <label><span>radio edit</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion">
+                            <label><span>club mix</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion">
+                            <label><span>mixtape</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="fg">
+                    <input type="text" placeholder="Основной исполнитель">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="При участии исполнителей ( Feat. )">
+                </fieldset>
+                <fieldset class="fg m-select">
+                    <select>
+                        <option selected>Жанр</option>
+                        <option>Жанр 1</option>
+                        <option>Жанр 2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fg m-select">
+                    <select>
+                        <option selected>Поджанр</option>
+                        <option>Поджанр 1</option>
+                        <option>Поджанр 2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Начало превью трека в секундах">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="ФИО автора текста">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="ФИО автора музыки">
+                </fieldset>
+                <fieldset class="fg">
+                    <textarea placeholder="Текст трека"></textarea>
+                </fieldset>
+
+                <div class="track-mate">
+                    <div class="text16">Присутствие ненормативной лексики</div>
+                    <div class="radio-buttons">
+                        <div class="radio-btn">
+                            <input type="radio" name="mate" checked>
+                            <label><span>Да</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="mate">
+                            <label><span>Нет</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="mate">
+                            <label><span>Чистая версия</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="fg fg-ai">
+                    <textarea placeholder="Информация о релизе (для редакторов плейлистов)"></textarea>
+                    <button class="fg-ai__btn m-btn m-btn-gray">
+                        <img src="img/ai.svg" alt="">
+                        <span>AI Генерация</span>
+                    </button>
+                </fieldset>
+
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-big m-btn-blue">
+                        <span>Добавить</span>
+                    </button>
+                </div>
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal tariff-modal" id="tariffModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Выберите условия тарифа
+                </div>
+            </div>
+            <div class="tariffs">
+                <div class="tariff-card _selected">
+                    <input checked type="radio" name="profileTariff">
+                    <div class="tariff-card__inner">
+                        <div class="tariff-card__top">
+                            <div class="text24 text20-tablet bold-text">
+                                FREE
+                            </div>
+                            <div class="tariff-card__price text18 text16-tablet bold-text">
+                                0 руб. / месяц
+                            </div>
+                        </div>
+                        <ul class="tariff-card__items">
+                            <li>Загружайте до 3 релизов одного музыканта каждый месяц.</li>
+                            <li>Выбирайте уникальные условия оплаты и выплаты роялти для каждого отдельного релиза.</li>
+                            <li>Релиз на лейбле Distrify</li>
+                        </ul>
+                        <div class="tariff-card__nav">
+                            <button class="m-btn m-btn-big m-btn-blue">
+                                <span>Текущий тариф</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff-card">
+                    <input type="radio" name="profileTariff">
+                    <div class="tariff-card__inner">
+                        <div class="tariff-card__top">
+                            <div class="text24 text20-tablet bold-text">
+                                ARTIST
+                            </div>
+                            <div class="tariff-card__price text18 text16-tablet bold-text">
+                                4 990 руб. / месяц
+                            </div>
+                        </div>
+                        <ul class="tariff-card__items">
+                            <li>Загружайте неограниченное кол-во релизов одного музыканта каждый месяц.</li>
+                            <li>Ставка роялти: 80/20% в пользу артиста</li>
+                            <li>Ваш псевдоним вместо лейбла Distrify</li>
+                            <li>Отчеты и выплата роялти каждый квартал</li>
+                        </ul>
+                        <div class="tariff-card__nav">
+                            <button class="m-btn m-btn-big m-btn-blue">
+                                <span>Повысить</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-radios">
+                <div class="price-radio">
+                    <input checked type="radio" name="price">
+                    <div class="price-radio__inner">
+                        <div class="price-radio__title">
+                            0 руб
+                        </div>
+                        <div class="price-radio__desc">
+                            Роялти 50 / 50
+                        </div>
+                    </div>
+                </div>
+                <div class="price-radio">
+                    <input type="radio" name="price">
+                    <div class="price-radio__inner">
+                        <div class="price-radio__title">
+                            990 руб
+                        </div>
+                        <div class="price-radio__desc">
+                            Роялти 70 / 30 <br>  (в пользу артиста)
+                        </div>
+                    </div>
+                </div>
+                <div class="price-radio">
+                    <input type="radio" name="price">
+                    <div class="price-radio__inner">
+                        <div class="price-radio__title">
+                            1990 руб
+                        </div>
+                        <div class="price-radio__desc">
+                            Роялти 90 / 10 <br>   (в пользу артиста)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="m-btn m-btn-big m-btn-blue">
+                <span>Оплатить</span>
+            </button>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

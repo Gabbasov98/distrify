@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Финансы и отчеты</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <div class="header__user">
+                <div class="avatar">
+                    <img src="img/avatar.webp" alt="">
+                </div>
+            </div>
+
+            <button class="burger">
+                <svg class="_view1" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.33325 6.99992C2.33325 6.35559 2.85559 5.83325 3.49992 5.83325H24.4999C25.1443 5.83325 25.6666 6.35559 25.6666 6.99992C25.6666 7.64425 25.1443 8.16659 24.4999 8.16659H3.49992C2.85559 8.16659 2.33325 7.64425 2.33325 6.99992ZM2.33325 13.9999C2.33325 13.3556 2.85559 12.8333 3.49992 12.8333H24.4999C25.1443 12.8333 25.6666 13.3556 25.6666 13.9999C25.6666 14.6443 25.1443 15.1666 24.4999 15.1666H3.49992C2.85559 15.1666 2.33325 14.6443 2.33325 13.9999ZM2.33325 20.9999C2.33325 20.3556 2.85559 19.8333 3.49992 19.8333H24.4999C25.1443 19.8333 25.6666 20.3556 25.6666 20.9999C25.6666 21.6443 25.1443 22.1666 24.4999 22.1666H3.49992C2.85559 22.1666 2.33325 21.6443 2.33325 20.9999Z" fill="white" style="fill:white;fill:white;fill-opacity:1;" />
+                </svg>
+                <svg class="_view2" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8249 6.17496C22.2805 6.63057 22.2805 7.36927 21.8249 7.82488L7.82488 21.8249C7.36927 22.2805 6.63057 22.2805 6.17496 21.8249C5.71935 21.3693 5.71935 20.6306 6.17496 20.175L20.175 6.17496C20.6306 5.71935 21.3693 5.71935 21.8249 6.17496Z" fill="white" style="fill:white;fill:white;fill-opacity:1;" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.17496 6.17496C6.63057 5.71935 7.36927 5.71935 7.82488 6.17496L21.8249 20.175C22.2805 20.6306 22.2805 21.3693 21.8249 21.8249C21.3693 22.2805 20.6306 22.2805 20.175 21.8249L6.17496 7.82488C5.71935 7.36927 5.71935 6.63057 6.17496 6.17496Z" fill="white" style="fill:white;fill:white;fill-opacity:1;" />
+                </svg>
+            </button>
+
+        </header>
+        <aside class="sidebar">
+            <a href="" class="sidebar__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user__show">
+                    <div class="avatar">
+                        <img src="img/avatar.webp" alt="">
+                    </div>
+                    <div class="sidebar-user__info">
+                        <div class="text14 semi-bold-text">MrDistify</div>
+                        <div class="sidebar-user__type">
+
+                            <span class="sidebar-user__type-text">
+                    Free
+                </span>
+
+
+                        </div>
+                    </div>
+                    <button class="sidebar-user__arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="sidebar-user__dropdown">
+                    <a href="" class="sidebar-user__link"><span>Редактировать профиль</span></a>
+                    <a href="" class="sidebar-user__link"><span>Управление тарифом</span></a>
+                    <div class="sidebar-user__bottom">
+                        <a href="" class="sidebar-user__link"><span>Выйти из аккаунта</span></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="sidebar__premium m-btn m-btn-gradient">
+                <img class="sidebar__premium-stars" src="img/stars.svg" alt="">
+                <span>Купить Premium</span>
+                <img class="sidebar__premium-arrows" src="img/arrow-right.svg" alt="">
+            </button>
+
+
+            <button class="sidebar__release m-btn m-btn-white">
+                <img src="img/plus.svg" alt="">
+                <span>Новый релиз</span>
+            </button>
+
+            <div class="sidebar__links">
+                <a href="" class="sidebar__link _active">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66675 9.99996C1.66675 5.39759 5.39771 1.66663 10.0001 1.66663C14.6025 1.66663 18.3334 5.39759 18.3334 9.99996C18.3334 14.6023 14.6025 18.3333 10.0001 18.3333C5.39771 18.3333 1.66675 14.6023 1.66675 9.99996ZM9.37508 4.16663C9.37508 3.82145 9.6549 3.54163 10.0001 3.54163C13.5669 3.54163 16.4584 6.43312 16.4584 9.99996C16.4584 13.5668 13.5669 16.4583 10.0001 16.4583C6.43324 16.4583 3.54175 13.5668 3.54175 9.99996C3.54175 9.65478 3.82157 9.37496 4.16675 9.37496C4.51193 9.37496 4.79175 9.65478 4.79175 9.99996C4.79175 12.8764 7.1236 15.2083 10.0001 15.2083C12.8766 15.2083 15.2084 12.8764 15.2084 9.99996C15.2084 7.12348 12.8766 4.79163 10.0001 4.79163C9.6549 4.79163 9.37508 4.5118 9.37508 4.16663ZM10.0001 6.04163C9.6549 6.04163 9.37508 6.32145 9.37508 6.66663C9.37508 7.0118 9.6549 7.29163 10.0001 7.29163C11.4959 7.29163 12.7084 8.50419 12.7084 9.99996C12.7084 11.4957 11.4959 12.7083 10.0001 12.7083C9.6549 12.7083 9.37508 12.9881 9.37508 13.3333C9.37508 13.6785 9.6549 13.9583 10.0001 13.9583C12.1862 13.9583 13.9584 12.1861 13.9584 9.99996C13.9584 7.81383 12.1862 6.04163 10.0001 6.04163Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                    <span>Дашбоард</span>
+                </a>
+                <a href="" class="sidebar__link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.09166 1.66663H12.9084C13.1021 1.66658 13.2507 1.66655 13.3805 1.67925C14.3037 1.76956 15.0593 2.32461 15.3798 3.07227H4.62031C4.94074 2.32461 5.69637 1.76956 6.61955 1.67925C6.74939 1.66655 6.89793 1.66658 7.09166 1.66663Z" fill="white" fill-opacity="0.6" />
+                        <path d="M5.25885 3.93589C4.09999 3.93589 3.14977 4.63568 2.83267 5.56405C2.82605 5.5834 2.81972 5.60286 2.81366 5.6224C3.14545 5.52193 3.49075 5.45629 3.84031 5.41147C4.74062 5.29605 5.8784 5.29611 7.2001 5.29618H12.9435C14.2652 5.29611 15.403 5.29605 16.3033 5.41147C16.6529 5.45629 16.9982 5.52193 17.33 5.6224C17.3239 5.60286 17.3176 5.5834 17.3109 5.56405C16.9938 4.63568 16.0436 3.93589 14.8848 3.93589H5.25885Z" fill="white" fill-opacity="0.6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7731 6.285H7.22708C4.41473 6.285 3.00855 6.285 2.21868 7.10735C1.42881 7.92971 1.61465 9.20022 1.98634 11.7413L2.33882 14.1509C2.6303 16.1436 2.77604 17.14 3.5237 17.7366C4.27135 18.3333 5.37408 18.3333 7.57953 18.3333H12.4206C14.6261 18.3333 15.7288 18.3333 16.4765 17.7366C17.2241 17.14 17.3699 16.1436 17.6614 14.1509L18.0138 11.7413C18.3855 9.20026 18.5714 7.9297 17.7815 7.10735C16.9916 6.285 15.5854 6.285 12.7731 6.285ZM12.1572 8.47085C11.1308 8.03236 9.95238 8.69201 9.88398 9.74367C9.881 9.7896 9.88101 9.84693 9.88103 9.91612L9.88103 9.93847C9.88103 9.96317 9.88103 9.9852 9.88157 10.0064L9.88123 12.9349C9.56599 12.7647 9.19998 12.6673 8.8096 12.6673C7.6262 12.6673 6.66675 13.5625 6.66675 14.6669C6.66675 15.7714 7.6262 16.6666 8.8096 16.6666C9.99298 16.6666 10.9524 15.7714 10.9525 14.6669L10.9528 11.4011L11.7262 11.786C11.7915 11.8186 11.8458 11.8456 11.8906 11.8647C12.917 12.3032 14.0954 11.6436 14.1638 10.5919C14.1668 10.546 14.1668 10.4886 14.1667 10.4195L14.1667 10.3972C14.1667 10.3689 14.1667 10.3442 14.1659 10.3201C14.1482 9.80051 13.8435 9.32656 13.3606 9.0675C13.3382 9.05551 13.3148 9.04388 13.2881 9.03057L12.3216 8.54956C12.2562 8.51702 12.202 8.48999 12.1572 8.47085Z" fill="white" fill-opacity="0.6" />
+                        <path d="M11.7112 9.38006C11.369 9.23384 10.9762 9.45387 10.9534 9.80425C10.9527 9.81524 10.9525 9.83802 10.9525 9.93254C10.9525 9.97001 10.9525 9.97767 10.9527 9.98372C10.9586 10.1568 11.0602 10.3148 11.2211 10.4012C11.2268 10.4042 11.234 10.4078 11.2694 10.4255L12.2148 10.896C12.3042 10.9404 12.3258 10.9509 12.3366 10.9555C12.6788 11.1017 13.0715 10.8817 13.0943 10.5313C13.095 10.5203 13.0953 10.4976 13.0953 10.403C13.0953 10.3656 13.0952 10.3579 13.095 10.3519C13.0891 10.1788 12.9876 10.0208 12.8266 9.93444L11.7112 9.38006Z" fill="white" fill-opacity="0.6" />
+                        <path d="M8.8096 13.6672C9.40138 13.6672 9.881 14.1148 9.88103 14.6669C9.88103 15.219 9.4014 15.6667 8.8096 15.6667C8.2178 15.6667 7.73818 15.219 7.73818 14.6669C7.73818 14.1149 8.2178 13.6672 8.8096 13.6672Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                    <span>Мои релизы</span>
+                </a>
+                <a href="" class="sidebar__link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.37033 3.07086C5.80937 2.7775 6.27313 2.52797 6.75489 2.32428C7.92398 1.83 8.50852 1.58286 9.2543 2.07725C10.0001 2.57163 10.0001 3.38101 10.0001 4.99977V6.66644C10.0001 8.23779 10.0001 9.02346 10.4882 9.51162C10.9764 9.99977 11.7621 9.99977 13.3334 9.99977H15.0001C16.6188 9.99977 17.4282 9.99977 17.9226 10.7456C18.417 11.4913 18.1699 12.0759 17.6756 13.245C17.4719 13.7267 17.2224 14.1905 16.929 14.6295C16.0133 15.9999 14.7118 17.068 13.1891 17.6988C11.6664 18.3295 9.99084 18.4945 8.37433 18.173C6.75782 17.8514 5.27297 17.0578 4.10753 15.8923C2.94209 14.7269 2.14842 13.242 1.82687 11.6255C1.50533 10.009 1.67036 8.33346 2.30109 6.81074C2.93182 5.28803 3.99992 3.98654 5.37033 3.07086Z" fill="white" fill-opacity="0.6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4779 1.77308C11.5639 1.43879 11.9047 1.23755 12.2389 1.32359C15.3878 2.13405 17.8654 4.61167 18.6759 7.76054C18.7619 8.09482 18.5607 8.43556 18.2264 8.5216C17.8921 8.60764 17.5514 8.4064 17.4653 8.07211C16.7684 5.36429 14.6352 3.23108 11.9274 2.53414C11.5931 2.4481 11.3918 2.10736 11.4779 1.77308Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                    <span>Финансы и отчеты</span>
+                </a>
+                <a href="" class="sidebar__link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10.0001" cy="4.99996" r="3.33333" fill="white" fill-opacity="0.6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7499 18.3333C12.375 18.3333 11.6875 18.3333 11.2604 17.9062C10.8333 17.4791 10.8333 16.7916 10.8333 15.4167C10.8333 14.0417 10.8333 13.3543 11.2604 12.9271C11.6875 12.5 12.375 12.5 13.7499 12.5C15.1248 12.5 15.8123 12.5 16.2394 12.9271C16.6666 13.3543 16.6666 14.0417 16.6666 15.4167C16.6666 16.7916 16.6666 17.4791 16.2394 17.9062C15.8123 18.3333 15.1248 18.3333 13.7499 18.3333ZM14.236 14.1204C14.236 13.8519 14.0184 13.6343 13.7499 13.6343C13.4814 13.6343 13.2638 13.8519 13.2638 14.1204V14.9306H12.4536C12.1852 14.9306 11.9675 15.1482 11.9675 15.4167C11.9675 15.6851 12.1852 15.9028 12.4536 15.9028H13.2638V16.713C13.2638 16.9814 13.4814 17.1991 13.7499 17.1991C14.0184 17.1991 14.236 16.9814 14.236 16.713V15.9028H15.0462C15.3147 15.9028 15.5323 15.6851 15.5323 15.4167C15.5323 15.1482 15.3147 14.9306 15.0462 14.9306H14.236V14.1204Z" fill="white" fill-opacity="0.6" />
+                        <path d="M13.0651 11.2524C12.6709 11.2571 12.3034 11.2715 11.9832 11.3146C11.4474 11.3866 10.861 11.5588 10.3765 12.0433C9.89199 12.5278 9.71983 13.1142 9.6478 13.6499C9.58308 14.1314 9.58317 14.7196 9.58326 15.3451V15.4883C9.58317 16.1138 9.58308 16.702 9.6478 17.1834C9.69835 17.5594 9.7982 17.9602 10.0207 18.3334C10.0138 18.3334 10.0068 18.3334 9.99992 18.3334C3.33325 18.3334 3.33325 16.6544 3.33325 14.5834C3.33325 12.5123 6.31802 10.8334 9.99992 10.8334C11.1051 10.8334 12.1474 10.9846 13.0651 11.2524Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                    <span>Партнерство</span>
+                </a>
+            </div>
+
+            <div class="sidebar__bottom">
+                <a href="" class="sidebar__help">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0546 12.8473C14.0594 11.6801 14.6668 10.161 14.6668 8.50004C14.6668 6.83906 14.0594 5.31996 13.0546 4.15274L10.2061 7.00123C10.4969 7.42837 10.6668 7.94436 10.6668 8.50004C10.6668 9.05573 10.4969 9.57171 10.2061 9.99885L13.0546 12.8473Z" fill="white" />
+                        <path d="M12.3475 13.5544C11.1802 14.5593 9.66114 15.1667 8.00016 15.1667C6.33918 15.1667 4.82008 14.5593 3.65287 13.5544L6.50135 10.706C6.92849 10.9967 7.44448 11.1667 8.00016 11.1667C8.55585 11.1667 9.07184 10.9967 9.49897 10.706L12.3475 13.5544Z" fill="white" />
+                        <path d="M2.94576 12.8473L5.79425 9.99885C5.50346 9.57171 5.3335 9.05573 5.3335 8.50004C5.3335 7.94436 5.50346 7.42837 5.79425 7.00123L2.94576 4.15274C1.94092 5.31996 1.3335 6.83906 1.3335 8.50004C1.3335 10.161 1.94092 11.6801 2.94576 12.8473Z" fill="white" />
+                        <path d="M8.00016 5.83337C7.44448 5.83337 6.92849 6.00334 6.50135 6.29412L3.65287 3.44564C4.82008 2.4408 6.33918 1.83337 8.00016 1.83337C9.66114 1.83337 11.1802 2.4408 12.3475 3.44564L9.49897 6.29412C9.07183 6.00334 8.55585 5.83337 8.00016 5.83337Z" fill="white" />
+                    </svg>
+                    <span>Помощь</span>
+                </a>
+                <div class="socials">
+                    <a href="" class="socials__item">
+                        <img src="img/instagram.svg" alt="">
+                    </a>
+                    <a href="" class="socials__item">
+                        <img src="img/vk.svg" alt="">
+                    </a>
+                    <a href="" class="socials__item _small">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                </div>
+                <div class="sidebar__work-on">
+                    <span class="text14">Work on</span>
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="sidebar__c">
+                    <div class="text10">© 2023 Distrify. Все права защищены.</div>
+                </div>
+            </div>
+
+        </aside>
+        <main class="content">
+
+            <div class="page-top">
+                <div class="text24 semi-bold-text">
+                    Финансы и отчеты
+                </div>
+            </div>
+
+            <div class="finance _tabs-parent">
+                <div class="finance__content">
+                    <div class="balance">
+                        <div class="balance__info">
+                            <div class="text14 text12-tablet white60-text">
+                                Баланс
+                            </div>
+                            <div class="text36 text28-tablet semi-bold-text">
+                                357 120 Р
+                            </div>
+                        </div>
+                        <div class="balance__nav">
+                            <button data-modal="balanceModal" class="m-btn m-btn-white">
+                                <img src="img/top-up.svg" alt="">
+                                <span>Пополнить</span>
+                            </button>
+                            <button class="m-btn m-btn-white">
+                                <img src="img/withdraw.svg" alt="">
+                                <span>Вывести</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tabs">
+                        <div class="tab _tab _active" data-tab="_tab1">
+                            <span>Отчеты</span>
+                        </div>
+                        <div class="tab _tab" data-tab="_tab2">
+                            <span>История операций</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-content _tab1 _active">
+                        <div class="reports">
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">1 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">1 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">1 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">300 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">1 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">1 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Артист
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        Cosmic Dreams Unite Us
+                                    </a>
+                                </div>
+                                <div class="report-card__info">
+                                    <div class="report-card__prof text12">
+                                        Период
+                                    </div>
+                                    <a href="" class="report-card__title text16">
+                                        IV квартал
+                                    </a>
+                                </div>
+                                <div class="report-card__info2">
+                                    <div class="report-card__badge">
+                                        <img src="img/profit.svg" alt="">
+                                        <span class="text13">1 200 Р</span>
+                                    </div>
+
+                                    <a href="" class="report-card__btn m-btn-gray">
+                                        <img src="img/doc.svg" alt="">
+                                        <span class="text14">Скачать отчет</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="finance__sidebar">
+                    <div class="tab-content _tab2">
+                        <div class="history">
+                            <div class="history__top">
+                                <div class="history__title text20 text14-tablet semi-bold-text">
+                                    <span class="_view1">История операций</span>
+                                    <span class="_view2">История за </span>
+                                </div>
+
+                                <div class="month-select m-select">
+                                    <select>
+                                        <option selected>Декабрь</option>
+                                        <option>Январь</option>
+                                        <option>Февраль</option>
+                                        <option>Март</option>
+                                        <option>Апрель</option>
+                                        <option>Май</option>
+                                        <option>Июнь</option>
+                                        <option>Июль</option>
+                                        <option>Август</option>
+                                        <option>Сентябрь</option>
+                                        <option>Октябрь</option>
+                                        <option>Ноябрь</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="history__items">
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Вывод на карту *157</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num red-text">
+                                        <div class="text18">- 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Пополнение баланса</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num green-text">
+                                        <div class="text18">+ 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Пополнение баланса</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num green-text">
+                                        <div class="text18">+ 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Вывод на карту *157</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num red-text">
+                                        <div class="text18">- 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Пополнение баланса</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num green-text">
+                                        <div class="text18">+ 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Вывод на карту *157</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num red-text">
+                                        <div class="text18">- 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Пополнение баланса</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num green-text">
+                                        <div class="text18">+ 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="operation-card">
+                                    <div class="operation-card__info">
+                                        <div class="text16">Вывод на карту *157</div>
+                                        <div class="text14 white60-text">
+                                            12.10.2023
+                                        </div>
+                                    </div>
+                                    <div class="operation-card__num red-text">
+                                        <div class="text18">- 8 120 Р</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="modal" id="balanceModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Пополнить баланс
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <input type="text" placeholder="Сумма пополнения">
+                </fieldset>
+                <fieldset class="fg m-select">
+                    <select>
+                        <option selected>Оплата банковской картой</option>
+                        <option>Оплата банковской картой 2</option>
+                    </select>
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-big m-btn-blue">
+                        <span>Пополнить счет</span>
+                    </button>
+                </div>
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="artistModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Добавить нового артиста
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <input type="text" value="Морган">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ссылка на Spotify">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ссылка на Apple Music">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-big m-btn-blue">
+                        <span>Добавить</span>
+                    </button>
+                </div>
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal track-modal" id="trackModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Загрузить трек
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <div class="file-input _music-input">
+                    <div class="file-input__area">
+                        <input type="file" accept="audio/*">
+                        <div class="file-input__area-inner">
+                            <img src="img/clip.svg" alt="" class="file-input__icon">
+                            <div class="file-input__title text16 bold-text">Загрузить трек</div>
+                            <div class="file-input__desc text12 white60-text">Файл в форматах: mp3</div>
+                            <div class="file-input__name"></div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Название трека">
+                </fieldset>
+                <div class="track-version">
+                    <div class="text16">Версия трека</div>
+                    <div class="radio-buttons">
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion" checked>
+                            <label><span>original</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion">
+                            <label><span>radio edit</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion">
+                            <label><span>club mix</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="trackVersion">
+                            <label><span>mixtape</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="fg">
+                    <input type="text" placeholder="Основной исполнитель">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="При участии исполнителей ( Feat. )">
+                </fieldset>
+                <fieldset class="fg m-select">
+                    <select>
+                        <option selected>Жанр</option>
+                        <option>Жанр 1</option>
+                        <option>Жанр 2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fg m-select">
+                    <select>
+                        <option selected>Поджанр</option>
+                        <option>Поджанр 1</option>
+                        <option>Поджанр 2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Начало превью трека в секундах">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="ФИО автора текста">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="ФИО автора музыки">
+                </fieldset>
+                <fieldset class="fg">
+                    <textarea placeholder="Текст трека"></textarea>
+                </fieldset>
+
+                <div class="track-mate">
+                    <div class="text16">Присутствие ненормативной лексики</div>
+                    <div class="radio-buttons">
+                        <div class="radio-btn">
+                            <input type="radio" name="mate" checked>
+                            <label><span>Да</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="mate">
+                            <label><span>Нет</span></label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" name="mate">
+                            <label><span>Чистая версия</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset class="fg fg-ai">
+                    <textarea placeholder="Информация о релизе (для редакторов плейлистов)"></textarea>
+                    <button class="fg-ai__btn m-btn m-btn-gray">
+                        <img src="img/ai.svg" alt="">
+                        <span>AI Генерация</span>
+                    </button>
+                </fieldset>
+
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-big m-btn-blue">
+                        <span>Добавить</span>
+                    </button>
+                </div>
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal tariff-modal" id="tariffModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text24 text18-mob bold-text">
+                    Выберите условия тарифа
+                </div>
+            </div>
+            <div class="tariffs">
+                <div class="tariff-card _selected">
+                    <input checked type="radio" name="profileTariff">
+                    <div class="tariff-card__inner">
+                        <div class="tariff-card__top">
+                            <div class="text24 text20-tablet bold-text">
+                                FREE
+                            </div>
+                            <div class="tariff-card__price text18 text16-tablet bold-text">
+                                0 руб. / месяц
+                            </div>
+                        </div>
+                        <ul class="tariff-card__items">
+                            <li>Загружайте до 3 релизов одного музыканта каждый месяц.</li>
+                            <li>Выбирайте уникальные условия оплаты и выплаты роялти для каждого отдельного релиза.</li>
+                            <li>Релиз на лейбле Distrify</li>
+                        </ul>
+                        <div class="tariff-card__nav">
+                            <button class="m-btn m-btn-big m-btn-blue">
+                                <span>Текущий тариф</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariff-card">
+                    <input type="radio" name="profileTariff">
+                    <div class="tariff-card__inner">
+                        <div class="tariff-card__top">
+                            <div class="text24 text20-tablet bold-text">
+                                ARTIST
+                            </div>
+                            <div class="tariff-card__price text18 text16-tablet bold-text">
+                                4 990 руб. / месяц
+                            </div>
+                        </div>
+                        <ul class="tariff-card__items">
+                            <li>Загружайте неограниченное кол-во релизов одного музыканта каждый месяц.</li>
+                            <li>Ставка роялти: 80/20% в пользу артиста</li>
+                            <li>Ваш псевдоним вместо лейбла Distrify</li>
+                            <li>Отчеты и выплата роялти каждый квартал</li>
+                        </ul>
+                        <div class="tariff-card__nav">
+                            <button class="m-btn m-btn-big m-btn-blue">
+                                <span>Повысить</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-radios">
+                <div class="price-radio">
+                    <input checked type="radio" name="price">
+                    <div class="price-radio__inner">
+                        <div class="price-radio__title">
+                            0 руб
+                        </div>
+                        <div class="price-radio__desc">
+                            Роялти 50 / 50
+                        </div>
+                    </div>
+                </div>
+                <div class="price-radio">
+                    <input type="radio" name="price">
+                    <div class="price-radio__inner">
+                        <div class="price-radio__title">
+                            990 руб
+                        </div>
+                        <div class="price-radio__desc">
+                            Роялти 70 / 30 <br>  (в пользу артиста)
+                        </div>
+                    </div>
+                </div>
+                <div class="price-radio">
+                    <input type="radio" name="price">
+                    <div class="price-radio__inner">
+                        <div class="price-radio__title">
+                            1990 руб
+                        </div>
+                        <div class="price-radio__desc">
+                            Роялти 90 / 10 <br>   (в пользу артиста)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="m-btn m-btn-big m-btn-blue">
+                <span>Оплатить</span>
+            </button>
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="white" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
